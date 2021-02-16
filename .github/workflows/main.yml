@@ -26,5 +26,7 @@ jobs:
       - name: Print Hello Message
         run: echo "hello world from deploy job!"
       - name: Printing deployment package
-        run: echo "deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
+        run: 
+          echo "deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
+          ping 8.8.8.8
   
