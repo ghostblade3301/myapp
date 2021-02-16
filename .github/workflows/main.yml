@@ -34,7 +34,7 @@ jobs:
           
     steps:
       - name:  Print inner env vars
-        run: echo "This is ${{ VAR1 }} and this is ${{ VAR2 }}"
+        run: echo "This is ${{ env.VAR1 }} and this is ${{ env.VAR2 }}"
           
       - name: Print Hello Message
         run: echo "hello world from deploy job!"
