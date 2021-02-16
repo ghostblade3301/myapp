@@ -9,7 +9,6 @@ jobs:
   my_testing:
     runs-on: [ ubuntu-latest ]
     steps:
-      
       - name: Print Hello Message
         run: echo "hello world from testing job!!!"
       - name: Execute few commands
@@ -17,6 +16,8 @@ jobs:
           echo "hello message1"
           echo "hello message2"
           echo "Application name: ${{ env.APPLICATION_NAME }}"
+      - name: List current folder
+        run: ls -la
     
     
   my_deploy: 
